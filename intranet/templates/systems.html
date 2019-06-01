@@ -1,0 +1,55 @@
+{% extends 'layout.html'%}
+
+{% load static %}
+
+{% block title %}Sistemas{% endblock %}
+
+{% block content %}
+
+<div class="row">
+    <div class="col-xs-24 col-sm-24 col-md-24 col-lg-24">
+        <ol class="breadcrumb">
+            <li>
+                <a href="{% url 'index' %}">Inicio</a>
+            </li>
+            <li class="active">Sistemas</li>
+        </ol>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-xs-24 col-sm-8 col-md-8 col-lg-8">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Sistema de Asistencia</h3>
+            </div>
+            <div class="panel-body veox-car-system">
+                <img class="img-responsive img-thumbnail" src="{% static 'images/intranet.png' %}" alt="image">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus facere aperiam adipisci, enim
+                    quasi praesentium eaque iusto quos ipsum ipsam odit? Quaerat dignissimos quae tenetur beatae iusto,
+                    perferendis ipsum molestias?</p>
+            </div>
+            <div class="panel-footer">
+                <a class="btn btn-primary" href="" target="_bank">Ingresar</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-24 col-sm-8 col-md-8 col-lg-8">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Buzón de sugerencias</h3>
+            </div>
+            <div class="panel-body veox-car-system">
+                <img class="img-responsive img-thumbnail" src="{% static 'images/intranet.png' %}" alt="image">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus facere aperiam adipisci, enim
+                    quasi praesentium eaque iusto quos ipsum ipsam odit? Quaerat dignissimos quae tenetur beatae iusto,
+                    perferendis ipsum molestias?</p>
+            </div>
+            <div class="panel-footer">
+                <a class="btn btn-primary" href="" target="_bank">Ingresar</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
