@@ -1,8 +1,30 @@
+label {
+  font-weight: bolder;
+}
+
+.logo {
+  padding: 20px;
+  text-align: center;
+}
+
+.logo > img {
+  width: 80px;
+}
+
+.glyphicon {
+  margin-right: 5px;
+}
+
 .panel-title {
   font-weight: bolder;
 }
 
-.veox-car-system img {
+.invalid {
+  border: 1px dotted #e57373;
+  background-color: #ffebee;
+}
+
+.veox-card-system img {
   display: block;
 }
 /*# sourceMappingURL=styles.css.map */

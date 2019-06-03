@@ -6,5 +6,5 @@ from django.http import HttpResponse
 def index(request):
     return render(request, 'index.html')
 
-def systems(request):
-    return render(request, 'systems.html')
+def sistemas(request):
+    return render(request, 'sistemas.html')

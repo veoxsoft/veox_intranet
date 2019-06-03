@@ -27,11 +27,13 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+APPEND_SLASH=False
 
 # Application definition
 
 INSTALLED_APPS = [
     'intranet',
+    'buzon',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

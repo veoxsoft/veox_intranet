@@ -1,0 +1,50 @@
+{% extends 'buzon/layout.html'%}
+
+{% load static %}
+
+{% block title %}Inicio{% endblock %}
+
+{% block content %}
+
+<div class="row">
+    <div class="col-xs-24 col-sm-offset-8 col-sm-8 col-md-8 col-lg-8">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Buzón de Sugerencias</h3>
+            </div>
+            <div class="panel-body">
+                <div class="logo">
+                    <img src="{% static 'images/logo.png' %}" alt="logo">
+                </div>
+                <div class="row">
+                    <div class="col-xs-24 col-sm-24 col-md-24 col-lg-24">
+                        <div class="form-group">
+                            <label>Asunto:</label>
+                            <select class="form-control" v-model="buzon.asunto" v-validate="'required'">
+                                <option value="SU">Sugerencia</option>
+                                <option value="RE">Reclamo</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-24 col-sm-24 col-md-24 col-lg-24">
+                        <div class="form-group">
+                            <label>Mensaje:</label>
+                            <textarea class="form-control" name="mensaje" v-model="buzon.mensaje"
+                                v-validate="'required'" rows="3"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel-footer text-right">
+                <button class="btn btn-default" v-on:click="cancel" type="reset"><span
+                        class="glyphicon glyphicon-remove-sign"></span>Cancelar</button>
+                <button class="btn btn-success" v-on:click="create" type="button"><span
+                        class="glyphicon glyphicon-ok-sign"></span>Enviar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

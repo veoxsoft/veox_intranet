@@ -1,7 +1,7 @@
 from django.urls import path
-from . import views
+from intranet import views
 
 urlpatterns = [
     path('', views.index, name='index'),
-    path('systems', views.systems, name='systems')
+    path('sistemas', views.sistemas, name='sistemas')
 ]
